@@ -1,0 +1,76 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.dog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+#dog {
+    width: min(50rem, 90%);
+    max-height: 85vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 2rem;
+    border-radius: 2rem;
+}
+
+#dog-image-container {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dog-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+.dog-facts-container {
+    padding: 0 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 3;
+    overflow-y: auto;
+}
+.dog-facts-container li {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+.dog-facts-container li:hover {
+    transform: scale(1.1) translateX(2rem);
+}
+
+#error {
+    width: 100%;
+    padding: 0 5rem;
+    
+}
+#error p {
+    font-size: 3rem;
+    text-align: center;
+}

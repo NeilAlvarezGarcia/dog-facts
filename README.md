@@ -1,4 +1,4 @@
-#Dog fats
+#Dog facts
 
 This is a project to practice Node.js and Express by creating a simple API that provides an image and facts about dogs.
 
